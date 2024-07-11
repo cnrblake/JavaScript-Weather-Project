@@ -23,7 +23,6 @@ function loadLocation() {
       return response.json();
     })
     .then((data) => {
-      console.log(data);
       where.innerText = data.location.name;
       temp.innerText = `${Math.floor(data.current.temp_c)}°C`;
       weatherIcon.setAttribute("src", data.current.condition.icon);
@@ -54,7 +53,6 @@ input.addEventListener("keypress", function (event) {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         where.innerText = data.location.name;
         temp.innerText = `${Math.floor(data.current.temp_c)}°C`;
         weatherIcon.setAttribute("src", data.current.condition.icon);
