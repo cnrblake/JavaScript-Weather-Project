@@ -1,6 +1,6 @@
 //saves api info
 const apiKey = "key=6d75ed911ffe4661b6a100104240907";
-const baseUrl = "http://api.weatherapi.com/v1/current.json?";
+const baseUrl = "https://api.weatherapi.com/v1/current.json?";
 
 //saves Dom Items To Variables
 const where = document.getElementById("where");
